@@ -18,7 +18,7 @@ export class SubjectsService {
 
 
   addSubjects(name: string): Observable<Subject> {
-    return this.http.post<Subject>("http://127.0.0.1:8800/subjects?name="+name,name)
+    return this.http.post<Subject>("http://127.0.0.1:3000/subjects?name="+name,name)
   }
 
 }
